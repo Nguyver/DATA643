@@ -1,0 +1,36 @@
+---
+title: 'Discussion 1: Scenario Design'
+author: "V. Nguy"
+date: "June 13, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Scenario Design
+
+### Recommender System
+www.youtube.com  
+
+#### Who are your target users
+The audience can be broken into two groups:  
+Entertainment - Entertainment is a very broad topic and can include anything from music videos to movies.  
+Educational - The user is trying to learn something.
+
+#### What are their key goals?
+Entertainment - The user is looking for something to entertain themselves with.  
+Educational - The user is trying to extract meaningful information. A student can find instructional videos explaining how to solve a particular type of math problem. A DIY (Do-it-yourself) person can find instructions on how to take apart and repair a broken appliance.
+
+#### How can you help them accomplish those goals?
+To help the user accomplish their goals, youtube will have to provide 'correct content' to the user. The 'correct content' would be have to be split into search and recommended categories. Once the search engine provides the user with the content they were looking for, the goal is now to keep the user watching similar content. 
+
+#### Reverse engineer the site
+Youtube is tracking their users through logins as well as cookies. After the user has logged out of their account, there are still overlaps in recommended content between a user who is logged in and not. The 'Up Next' module does not use the user's entire history to serve up the next content where as the home page does.
+
+
+#### Improvements
+One way to improve youtube is for youtube to transcribe the words within the video and perform analysis on the text. This would benefit the search and recommender system by providing more information about the video beyond the title and description.
+
+Another way to improve the recommender system is to analyse the user's viewing habit for a particular video. If the user only watch a small percentage of the video and not complete the video, a score could be assigned to calculate a numerical score representing how much the user 'liked' the video. A similar analysis could also be used to analyze how much the user skips around while watching the video and assign another score.
