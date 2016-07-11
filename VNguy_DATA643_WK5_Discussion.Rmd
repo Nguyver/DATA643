@@ -1,0 +1,21 @@
+---
+title: 'Discussion 5: network-based recommenders'
+author: "V. Nguy"
+date: "July 10, 2016"
+output: html_document
+---
+
+## Network-Based Recommenders
+
+### Recommender System
+www.match.com (Or any of the dating sites)  
+
+
+#### Description
+Many dating site generate 'matches' using inputs from their users to describe themselves and their interests. Using the inputs from the users, various interests can be ranked in order of importance and a match score could be calculated between users.  
+
+
+#### Extending existing recommender system
+One approach to extend the system using a network-model would be to read in 'check-in' data from various sources (facebook, foursquare, etc). A network could be modeled between users and venues. The check-in information would also include demographics information regarding the venue and can be used in a topic model. Interests information can be inferred from the check-in data and the importance of the 'interest' can be calculated by how many times a person has check-in at a venue. If a person checks into a lot of hotels in various countries, it can be inferred that the person likes to travel.  
+
+The network model can be used to determine if two people have similar interest just by seeing how many venues (and frequency of visit) and interests they have in common.
